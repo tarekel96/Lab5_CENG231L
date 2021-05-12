@@ -16,16 +16,12 @@ using namespace std;
 
 int main(int argc, char * argv[])
 {
-    if(argc != 3){
-        printf("Error: Please provide an IP and Port\n");
-        exit(EXIT_FAILURE);
-    }
     int sockfd;
     int len;
     struct sockaddr_in address;
     int result;
-    char* ip = argv[1];
-    int port = atoi(argv[2]);
+    char* ip = "10.0.2.15";
+    int port = 5000;
     char buffer[1024] = {0};
     char clientReply[1024] = {0};
 

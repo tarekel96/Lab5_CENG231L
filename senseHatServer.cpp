@@ -34,7 +34,6 @@ int main(int argc, char * argv[])
     PyObject *sys;
     PyObject *path;
     PyObject *pName;
-    //PyObject *pModule;
     
     sys = PyImport_ImportModule("sys");
     path = PyObject_GetAttrString(sys, "path");

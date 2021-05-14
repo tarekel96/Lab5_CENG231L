@@ -20,7 +20,7 @@ int main(int argc, char * argv[])
     int len;
     struct sockaddr_in address;
     int result;
-    char* ip = "10.0.2.15";
+    char* ip = "192.168.1.14";
     int port = 5000;
     char buffer[1024] = {0};
     char clientReply[1024] = {0};

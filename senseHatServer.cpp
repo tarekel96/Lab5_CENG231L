@@ -49,7 +49,7 @@ int main(int argc, char * argv[])
         PyErr_Print();
     }
     
-    char* ip_address = "10.0.2.15";
+    char* ip_address = "192.168.1.14";
     int PORT_NUMBER = 5000;
     
     int server_sockfd;

@@ -11,7 +11,7 @@
   - Console arguments [ip address, port number]
   
 ## Instructions to run the program:
-- **Compile the server with gcc/g++ using these commands:**
+### Compile the server with gcc/g++ using these commands:
 - **gcc -c sense_svc.c**
   -  Generates sense_svc.o
 -  **gcc -c sense_sif.c** <-- server interface
@@ -21,7 +21,7 @@
 - **gcc -o Server sense_svc.o sense_sif.o sense_srp.o -I /usr/include/python2.7/ $(/usr/bin/python2.7-config --ldflags) -w**
   - Should make the RPC Server in a file called Server but get undefined reference error
 
-  - **Compile the client with gcc/g++ using these commands:**
+### Compile the client with gcc/g++ using these commands:
 - **gcc -c sense_clnt.c**
   -  Generates sense_clnt.o
 -  **gcc -c sense_cif.c** <-- client interface

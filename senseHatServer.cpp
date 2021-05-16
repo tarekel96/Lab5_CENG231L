@@ -1,6 +1,6 @@
   
 /*  Make the necessary includes and set up the variables.  */
-
+#include "sense.h"
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>

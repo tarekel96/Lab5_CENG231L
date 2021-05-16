@@ -9,7 +9,7 @@
 
 static	int retcode;
 
-void get_temperature(void), get_pressure(void), get_humidity(void), send_message(void);
+void get_temperature(void), get_pressure(void), get_humidity(void), send_message(void), emu_clientHandler(void);
 
 /*------------------------------------------------------------------------
  * insertw_1_svc -  server side interface to remote procedure insertw
@@ -49,4 +49,14 @@ void *
 send_message_1_svc(char ** n, struct svc_req * b)
 {
 	send_message();
+}
+
+/*------------------------------------------------------------------------
+ * lookupw_1_svc -  server side interface to remote procedure lookupw
+ *------------------------------------------------------------------------
+ */
+void * 
+emu_clienthandler_1_svc_1(void * n, struct svc_req * b)
+{
+	emu_clientHandler();
 }

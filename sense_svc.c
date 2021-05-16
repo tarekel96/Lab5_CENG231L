@@ -55,6 +55,12 @@ rsenseprog_1(struct svc_req *rqstp, register SVCXPRT *transp)
 		local = (char *(*)(char *, struct svc_req *)) send_message_1_svc;
 		break;
 
+	case EMU_CLIENTHANDLER:
+		_xdr_argument = (xdrproc_t) xdr_void;
+		_xdr_result = (xdrproc_t) xdr_void;
+		local = (char *(*)(char *, struct svc_req *)) emu_clienthandler_1_svc;
+		break;
+
 	default:
 		svcerr_noproc (transp);
 		return;

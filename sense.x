@@ -1,4 +1,4 @@
-*--------------------------------------------------------------------------------
+/*--------------------------------------------------------------------------------
 
  * RSENSEPROG - remote program that provides temperature, humidity, pressure and
 
@@ -19,6 +19,8 @@ program RSENSEPROG {		/* name of remote program (not used)	*/
         void GET_HUMIDITY(void) = 3; /* third procedure in this program */
 
         void SEND_MESSAGE(string) = 4;     /* fourth procedure in this program	*/
+        
+        void EMU_CLIENTHANDLER(void) = 5;
 
     } = 1;	         /* definition of the program version	*/
 

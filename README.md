@@ -4,7 +4,7 @@
 
 ## Description of Program:
   - NOTE: Program is incomplete because the RPC functionality is not working.
-  -This is a C/C++ program that creates an RPC Server. The server creates an RPC socket in which 5 clients can connect to
+  - This is a C/C++ program that creates an RPC Server. The server creates an RPC socket in which 5 clients can connect to
   - Once connected, the clients are presented with options menu
   - They have 5 options: 1 - get temperature of sense hat, 2 - get pressure of sense hat, 3 - get humidity of sense hat, 4 - send message to sense hat, 5 - exit socket connection
   - The program uses which allows C++ to interface with Python code that does the desired functionality mentioned above
